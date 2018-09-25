@@ -4,13 +4,40 @@
 \usepackage[cm]{fullpage}
 \usepackage{enumitem}
 \usepackage{amsmath}
+\usepackage{framed,color}
+\usepackage{minibox}
+\usepackage{framed}
+
 \setlist[1]{itemsep=0pt}
+
+\definecolor{shadecolor}{rgb}{1.0, 0.89, 0.77}
 
 \begin{document}
 
+\newcommand{\decoratedbox}[2] {
+  \begin{center}
+    \begin{minipage}{0.5\textwidth}
+      \begin{center}
+        \begin{shaded}
+          \begin{tabular}{@{}c@{}}
+            \includegraphics[width=25px,height=30px,keepaspectratio]{#2}
+          \end{tabular}
+          \emph{#1}
+        \end{shaded}
+      \end{center}
+    \end{minipage}
+  \end{center}
+}
+
+\newcommand{\fogalom}[2] {
+  \begin{framed}
+    \noindent \textbf{#1}:\\ #2
+  \end{framed}
+}
+
 \newcommand{\papiroshivatkozas}[1] {
   \begin{center}
-    \emph{#1}
+    \decoratedbox{#1}{img/clipboard}
   \end{center}
 }
 
