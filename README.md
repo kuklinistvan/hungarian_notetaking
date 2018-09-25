@@ -12,7 +12,7 @@ Ezt a sablont használom egyetemi jegyzetek készítésére.
 
 ## Használat
 
-Másoljuk át a `content.tex.example` állományt `content.tex` névre és készítsük el a dokumentumot. Generáljuk le a dokumentumot ideálisan a `latexmk -pdf header.tex` paranccsal.
+Írjuk meg a dokumentum törzsét a `content.tex` állományban.
 
 ### Segéd scriptek
 
