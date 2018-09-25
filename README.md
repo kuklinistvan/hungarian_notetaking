@@ -6,7 +6,7 @@ Ezt a sablont használom egyetemi jegyzetek készítésére.
 
 * `\decoratedbox{szoveg}{kep}`: megjelenít egy dobozt a kiválasztott piktogrammal.
     * `\papiroshivatkozas{lásd: ábra/ valami}`: ha valamit külön lapra jegyzeteltem és valahogyan lehetővé tettem annak egyéni azonosítását, ezzel helyezek el egy arra hivatkozó dobozt.
-* `\fogalom{nev}{leiras}`: definíció, állítás, tétel, bármi, aminek címe van, egy keretben, alatta a leírással.
+* `\begin{fogalom}{nev}`: definíció, állítás, tétel, bármi, aminek címe van, egy keretben, alatta a leírással.
 
 (coming soon :))
 

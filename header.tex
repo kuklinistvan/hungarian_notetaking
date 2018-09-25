@@ -1,6 +1,8 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage{graphicx}
+\usepackage{t1enc}
 \usepackage[magyar]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage[cm]{fullpage}
 \usepackage{enumitem}
 \usepackage{amsmath}
@@ -34,9 +36,12 @@
   \end{center}
 }
 
-\newcommand{\fogalom}[2] {
+\newenvironment{fogalom}[1]
+{
   \begin{framed}
-    \noindent \textbf{\uppercase{#1}}\\ #2
+    \noindent \textbf{\uppercase{#1}}\\
+  }
+  {
   \end{framed}
 }
 
