@@ -16,22 +16,27 @@
 
 \newcommand{\decoratedbox}[2] {
   \begin{center}
-    \begin{minipage}{0.5\textwidth}
-      \begin{center}
-        \begin{shaded}
-          \begin{tabular}{@{}c@{}}
+    \begin{minipage}{0.7\textwidth}
+      \begin{shaded}
+        \begin{minipage}{0.15\textwidth}
+          \begin{center}
             \includegraphics[width=25px,height=30px,keepaspectratio]{#2}
-          \end{tabular}
-          \emph{#1}
-        \end{shaded}
-      \end{center}
+          \end{center}
+        \end{minipage}
+        \begin{minipage}{0.70\textwidth}
+          \begin{center}
+            #1
+          \end{center}
+        \end{minipage}
+      \end{shaded}
+
     \end{minipage}
   \end{center}
 }
 
 \newcommand{\fogalom}[2] {
   \begin{framed}
-    \noindent \textbf{#1}:\\ #2
+    \noindent \textbf{\uppercase{#1}}\\ #2
   \end{framed}
 }
 
